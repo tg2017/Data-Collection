@@ -423,8 +423,12 @@ public class DataCollection{
                     }
                     if (isBe) {
                         auxVerb[auxInCount] = "N/A";
-                    } else if (auxVerbAmt < 1) {
+                    } else if (auxVerbAmt > 1) {
                         auxVerb[auxInCount] = JOptionPane.showInputDialog(null, new JLabel("What is AUXILIARY VERB?" + (auxInCount + 1), JLabel.CENTER), "Auxiliary Verb", JOptionPane.PLAIN_MESSAGE);
+                    } else if (auxVerbAmt == 1){
+                        auxVerb[auxInCount] = JOptionPane.showInputDialog(null, new JLabel("What is the AUXILIARY VERB?", JLabel.CENTER), "Auxiliary Verb", JOptionPane.PLAIN_MESSAGE);
+                    } else {
+                        auxVerb[auxInCount] = "ERROR";
                     }
                     //TODO: Fix NullPointerException upon reaching this point
                     if (!(auxVerb[auxInCount].equals("N/A"))) {
