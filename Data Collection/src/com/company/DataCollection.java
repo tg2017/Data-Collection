@@ -430,7 +430,6 @@ public class DataCollection{
                     } else {
                         auxVerb[auxInCount] = "ERROR";
                     }
-                    //TODO: Fix NullPointerException upon reaching this point
                     if (!(auxVerb[auxInCount].equals("N/A"))) {
                         auxVerb[auxInCount] = auxVerb[auxInCount].toLowerCase();
                     }
