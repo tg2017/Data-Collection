@@ -24,8 +24,8 @@
       <file leaf-file-name="DataCollection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="431" column="21" lean-forward="false" selection-start-line="431" selection-start-column="21" selection-end-line="431" selection-end-column="21" />
+            <state relative-caret-position="109">
+              <caret line="414" column="12" lean-forward="true" selection-start-line="414" selection-start-column="12" selection-end-line="414" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -65,8 +65,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-199" />
-    <option name="y" value="745" />
+    <option name="x" value="-29" />
+    <option name="y" value="11" />
     <option name="width" value="1616" />
     <option name="height" value="840" />
   </component>
@@ -540,8 +540,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-199" y="745" width="1616" height="840" extended-state="0" />
-    <editor active="true" />
+    <frame x="-29" y="11" width="1616" height="840" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -553,7 +553,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22017045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22017045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -951,8 +951,8 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/Tester.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="431" column="21" lean-forward="false" selection-start-line="431" selection-start-column="21" selection-end-line="431" selection-end-column="21" />
+        <state relative-caret-position="109">
+          <caret line="414" column="12" lean-forward="true" selection-start-line="414" selection-start-column="12" selection-end-line="414" selection-end-column="12" />
           <folding />
         </state>
       </provider>
