@@ -42,7 +42,7 @@ public class DataCollection{
 
 
         //ToDo: Make fancy-looking startup menu
-        //ToDo: accomodate for all sentence types
+        //ToDo: Accommodate for all sentence types
         //ToDo: Data control to ensure Strings are not parsed to Ints
 
 
@@ -394,8 +394,9 @@ public class DataCollection{
                     if (mainVerbAmtStr.equals(null)) {
                         throw new NullPointerException();
                     } else {
+                        mainVerbAmt = Integer.parseInt(mainVerbAmtStr);
                         for (int mainInCount = 0; mainInCount < mainVerbAmt; mainInCount++) {
-                            mainVerb[mainInCount] = JOptionPane.showInputDialog(null, new JLabel("What is MAIN VERB?" + (mainInCount + 1), JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
+                            mainVerb[mainInCount] = JOptionPane.showInputDialog(null, new JLabel("What is MAIN VERB " + (mainInCount + 1) + "?", JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
                         }
                     }
                 }
@@ -412,11 +413,13 @@ public class DataCollection{
 
                 //ToDo: Auxiliary Verb (there is no aux verb if main verb is "be")
                 auxVerbAmtStr = JOptionPane.showInputDialog(null, new JLabel("How many AUXILIARY VERBS are there?", JLabel.CENTER), "Auxiliary Verb", JOptionPane.PLAIN_MESSAGE);
+                System.out.println(auxVerbAmtStr);
                 if (auxVerbAmtStr.equals(null)){
                     throw new NullPointerException();
                 } else {
                     auxVerbAmt = Integer.parseInt(auxVerbAmtStr);
                 }
+                System.out.println(auxVerbAmt);
                 for (int auxInCount = 0; auxInCount < auxVerbAmt; auxInCount++) {
                     if (mainVerb[auxInCount].equals("be") || mainVerb[auxInCount].equals("is") || mainVerb[auxInCount].equals("are") || mainVerb[auxInCount].equals("were") || mainVerb[auxInCount].equals("was") || mainVerb[auxInCount].equals("am")) {
                         isBe = true;
@@ -424,22 +427,23 @@ public class DataCollection{
                     if (isBe) {
                         auxVerb[auxInCount] = "N/A";
                     } else if (auxVerbAmt > 1) {
-                        auxVerb[auxInCount] = JOptionPane.showInputDialog(null, new JLabel("What is AUXILIARY VERB?" + (auxInCount + 1), JLabel.CENTER), "Auxiliary Verb", JOptionPane.PLAIN_MESSAGE);
+                        auxVerb[auxInCount] = JOptionPane.showInputDialog(null, new JLabel("What is AUXILIARY VERB " + (auxInCount + 1) + "?", JLabel.CENTER), "Auxiliary Verb", JOptionPane.PLAIN_MESSAGE);
                     } else if (auxVerbAmt == 1){
                         auxVerb[auxInCount] = JOptionPane.showInputDialog(null, new JLabel("What is the AUXILIARY VERB?", JLabel.CENTER), "Auxiliary Verb", JOptionPane.PLAIN_MESSAGE);
                     } else {
                         auxVerb[auxInCount] = "ERROR";
                     }
-                    if (!(auxVerb[auxInCount].equals("N/A"))) {
+                    if (!(auxVerb[auxInCount].equalsIgnoreCase("N/A")) && !(auxVerb[auxInCount].equals("ERROR"))){
                         auxVerb[auxInCount] = auxVerb[auxInCount].toLowerCase();
                     }
 
                     //ToDo: Format Output for Auxiliary Verb
                     auxVerbOut[auxInCount] = auxVerb[auxInCount];
+                    /*
                     auxVerbForm = AUXVERBOUTLENGTH - auxVerb[auxInCount].length();
                     for (int auxVerbCount = 1; auxVerbCount <= auxVerbForm; auxVerbCount++) {
                         auxVerbOut[auxInCount] = auxVerbOut[auxInCount] + " ";
-                    }
+                    } */
                 }
 
 
@@ -620,7 +624,7 @@ public class DataCollection{
 */
 
                 //Ask to continue
-                isDone = Integer.parseInt(JOptionPane.showInputDialog(null, "Continue entering questions?\n     1) Yes\n     2) No","", JOptionPane.PLAIN_MESSAGE));
+                isDone = Integer.parseInt(JOptionPane.showInputDialog(null, "Continue entering questions?\n     1) Yes\n     2) No","Continue", JOptionPane.PLAIN_MESSAGE));
                 while (isDone > 2 || isDone < 1) {
                     isDone = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\nContinue entering questions?\n     1) Yes\n     2) No", "ERROR_Input", JOptionPane.PLAIN_MESSAGE));
                 }
@@ -634,6 +638,8 @@ public class DataCollection{
                 cancelChoice = JOptionPane.showOptionDialog(null, new JLabel("<html>Are you sure you want to exit?</html>", JLabel.CENTER), "Cancel", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null, cancelOptions, "Restart");
                 if (cancelChoice == 1){
                     System.exit(2);
+                } else {
+                    continue;
                 }
             } catch (java.lang.StringIndexOutOfBoundsException noInput){
                 JOptionPane.showMessageDialog(null, "Something went wrong.\nBe sure to enter at least one character at every entry window.", "ERROR_NoInput", JOptionPane.ERROR_MESSAGE);
