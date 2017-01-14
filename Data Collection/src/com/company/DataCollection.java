@@ -4,14 +4,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 import java.lang.*;
-
+import java.util.Arrays;
 
 
 public class DataCollection{
 
     public static void main(String[] args){
 
-        final int SUBOUTLENGTH = 17, TYPEOUTLENGTH = 13, QWORDLENGTH = 7, AUXVERBOUTLENGTH = 14, NEGOUTLENGTH = 8, MAINVERBOUTLENGTH = 13, STYPEOUTLENGTH = 15;
+        final int SUBOUTLENGTH = 17, TYPEOUTLENGTH = 13, QWORDLENGTH = 7, AUXVERBOUTLENGTH = 14, NEGOUTLENGTH = 3, MAINVERBOUTLENGTH = 13, STYPEOUTLENGTH = 13;
 
         String qWord, type, sType, question, ansIntend, ansGiven, testStr;
         String qWordOut, typeOut, sTypeOut, questionOut, negOut;
@@ -23,15 +23,22 @@ public class DataCollection{
 
         String[] outLine = new String[30];
         String[] choice = new String[10];
-        String[] subject = new String[5], mainVerb = new String[10], auxVerb = new String[10];
-        String[] subjectOut = new String[5], mainVerbOut = new String[5], auxVerbOut = new String[10];
-        int subjectForm, auxVerbForm, mainVerbForm, qWordForm, typeForm, sTypeForm, negForm, questionLength, lineNum, choiceLineNum = 0;
+        String[] subject = new String[10], mainVerb = new String[10], auxVerb = new String[10];
+        String[] subjectOut = new String[10], mainVerbOut = new String[10], auxVerbOut = new String[10];
+
         int isDone = 1, isNeg, useDefault, setDefault, cancelChoice;
         int yesNoIntend, yesNoGiven, choiceIntend, choiceGiven;
         int typeNum, qWordNum, sTypeNum;
         int subjectAmt, choiceAmt, mainVerbAmt = 0, auxVerbAmt;
+        int subjectForm, auxVerbForm, mainVerbForm, qWordForm, typeForm, sTypeForm, negForm, questionLength, lineNum, choiceLineNum = 0;
+        int auxLengthMax, mainLengthMax, subLengthMax, auxAmtMax, mainAmtMax, subAmtMax, greatestAmt;
+        int[] subLength = new int[10];
+        int[] mainLength = new int[10];
+        int[] auxLength = new int[10];
+        int[] allAmts = new int[5];
         char questionEndChar;
-        boolean isBe = false, multSub = false, brSet = false;
+        boolean isBe = false, brSet = false;
+        boolean multSub = false, multAux = false, multMain = false;
 
         String resumePlace;
         JFileChooser chooser = new JFileChooser();
@@ -44,6 +51,7 @@ public class DataCollection{
         //ToDo: Make fancy-looking startup menu
         //ToDo: Accommodate for all sentence types
         //ToDo: Data control to ensure Strings are not parsed to Ints
+        //ToDo: Limit all aspects to only 9 per question
 
 
         //Get report file directory
@@ -375,16 +383,6 @@ public class DataCollection{
                     }
                 }
 
-                //Format Output for Subject
-                for (int subFormCount = 0; subFormCount <= subjectAmt - 1; subFormCount++) {
-                    subject[subFormCount] = subject[subFormCount].toLowerCase();
-                    subjectForm = SUBOUTLENGTH - subject[subFormCount].length();
-                    subjectOut[subFormCount] = subject[subFormCount];
-                    for (int subCount = 1; subCount <= subjectForm; subCount++) {
-                        subjectOut[subFormCount] = subjectOut[subFormCount] + " ";
-                    }
-                }
-
 
                 //Main Verb
                 if (sTypeNum == 1) {
@@ -401,17 +399,7 @@ public class DataCollection{
                     }
                 }
 
-                //ToDo: Format Output for Main Verb
-                for (int mainArrayCount = 0; mainArrayCount < mainVerbAmt; mainArrayCount++) {
-                    mainVerb[mainArrayCount] = mainVerb[mainArrayCount].toLowerCase();
-                    mainVerbOut[mainArrayCount] = mainVerb[mainArrayCount];
-                    mainVerbForm = MAINVERBOUTLENGTH - mainVerb[mainArrayCount].length();
-                    for (int mainVerbCount = 1; mainVerbCount <= mainVerbForm; mainVerbCount++) {
-                        mainVerbOut[mainArrayCount] = mainVerbOut[mainArrayCount] + " ";
-                    }
-                }
-
-                //ToDo: Auxiliary Verb (there is no aux verb if main verb is "be")
+                //Auxiliary Verb (there is no aux verb if main verb is "be")
                 auxVerbAmtStr = JOptionPane.showInputDialog(null, new JLabel("How many AUXILIARY VERBS are there?", JLabel.CENTER), "Auxiliary Verb", JOptionPane.PLAIN_MESSAGE);
                 System.out.println(auxVerbAmtStr);
                 if (auxVerbAmtStr.equals(null)){
@@ -437,14 +425,6 @@ public class DataCollection{
                     if (!(auxVerb[auxInCount].equalsIgnoreCase("N/A")) && !(auxVerb[auxInCount].equals("ERROR"))){
                         auxVerb[auxInCount] = auxVerb[auxInCount].toLowerCase();
                     }
-
-                    //ToDo: Format Output for Auxiliary Verb
-                    auxVerbOut[auxInCount] = auxVerb[auxInCount];
-                    /*
-                    auxVerbForm = AUXVERBOUTLENGTH - auxVerb[auxInCount].length();
-                    for (int auxVerbCount = 1; auxVerbCount <= auxVerbForm; auxVerbCount++) {
-                        auxVerbOut[auxInCount] = auxVerbOut[auxInCount] + " ";
-                    } */
                 }
 
 
@@ -566,6 +546,7 @@ public class DataCollection{
                         }
                     }
                     for (int choiceGivenOutCount = 0; choiceGivenOutCount < choiceAmt; choiceGivenOutCount++){
+
                         if (choiceGiven == (choiceGivenOutCount+1)){
                             ansGiven = choice[choiceGivenOutCount];
                         }
@@ -576,10 +557,83 @@ public class DataCollection{
 
 
                 //Final Output
-                //TODO: "Negative" -> "Neg" (?)
                 //ToDo: New layout
-/*
-            if (multSub) {
+
+                outLine[0] = "Question: " + questionOut + "\n";
+                outLine[1] = "";
+                outLine[2] = "   ----------------------------------------------- ";
+                outLine[3] = "  | Sentence Type | Question Type | Q. Word | Neg |";
+                outLine[4] = "  |---------------|---------------|---------|-----|";
+                outLine[5] = "  | " + sTypeOut + " | " + typeOut + " | " + qWordOut + " | " + negOut + " |";
+                outLine[6] = "   ----------------------------------------------- ";
+
+                //Find maximum length of each term to be placed in 2nd chart
+                for (int formatCount = 0; formatCount < 10; formatCount++){
+                    auxLength[formatCount] = auxVerb[formatCount].length();
+                    mainLength[formatCount] = mainVerb[formatCount].length();
+                    subLength[formatCount] = subject[formatCount].length();
+                }
+                auxLengthMax = Arrays.stream(auxLength).max().getAsInt();
+                mainLengthMax = Arrays.stream(mainLength).max().getAsInt();
+                subLengthMax = Arrays.stream(subLength).max().getAsInt();
+
+                //Find greatest number of terms
+                allAmts[0] = subjectAmt;
+                allAmts[1] = mainVerbAmt;
+                allAmts[2] = auxVerbAmt;
+                greatestAmt = Arrays.stream(allAmts).max().getAsInt();
+
+                //Format Output for Subject
+                for (int subFormatCount = 0; subFormatCount < greatestAmt; subFormatCount++){
+                    if (subject[subFormatCount].equals(null)){
+                        subjectOut[subFormatCount] = " - ";
+                    } else {
+                        subjectOut[subFormatCount] = subject[subFormatCount];
+                    }
+                    subjectForm = subLengthMax - subject[subFormatCount].length();
+                    for (int subjectCount = 1; subjectCount <= subjectForm; subjectCount++) {
+                        subjectOut[subjectCount] = subjectOut[subjectCount] + " ";
+                    }
+                }
+
+                //Format Output for Main Verb
+                for (int mainFormatCount = 0; mainFormatCount < greatestAmt; mainFormatCount++){
+                    if (mainVerb[mainFormatCount].equals(null)){
+                        mainVerbOut[mainFormatCount] = " - ";
+                    } else {
+                        mainVerbOut[mainFormatCount] = mainVerb[mainFormatCount];
+                    }
+                    mainVerbForm = mainLengthMax - mainVerb[mainFormatCount].length();
+                    for (int mainVerbCount = 1; mainVerbCount <= mainVerbForm; mainVerbCount++) {
+                        mainVerbOut[mainFormatCount] = mainVerbOut[mainFormatCount] + " ";
+                    }
+                }
+
+                //Format Output for Aux Verb
+                for (int auxFormatCount = 0; auxFormatCount < greatestAmt; auxFormatCount++){
+                    if (auxVerb[auxFormatCount].equals(null)){
+                        auxVerbOut[auxFormatCount] = " - ";
+                    } else {
+                        auxVerbOut[auxFormatCount] = auxVerb[auxFormatCount];
+                    }
+                    auxVerbForm = auxLengthMax - auxVerb[auxFormatCount].length();
+                    for (int auxVerbCount = 1; auxVerbCount <= auxVerbForm; auxVerbCount++) {
+                        auxVerbOut[auxFormatCount] = auxVerbOut[auxFormatCount] + " ";
+                    }
+                }
+                //ToDo: Finish this
+                outLine[7] = "";
+
+
+
+
+
+
+
+
+
+
+/*            if (multSub) {
                 outLine[0] = "Question: " + questionOut + "\n";
                 outLine[1] = " |  Sentence Type  | Question Type | Q. Word | Auxiliary Verb |";
                 for (int finalSubOutCount = 1; finalSubOutCount <= subjectAmt; finalSubOutCount++) {
@@ -685,7 +739,7 @@ public class DataCollection{
                 cancelChoice = JOptionPane.showOptionDialog(null, new JLabel("<html>Are you sure you want to exit?</html>", JLabel.CENTER), "Cancel", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null, cancelOptions, "Restart");
                 if (cancelChoice == 1){
                     System.exit(2);
-                }
+                } //ToDo: make it so that you can resume from previous point
             } catch (java.lang.StringIndexOutOfBoundsException noInput){
                 JOptionPane.showMessageDialog(null, "Something went wrong.\nBe sure to enter at least one character at every entry window.", "ERROR_NoInput", JOptionPane.ERROR_MESSAGE);
             }
