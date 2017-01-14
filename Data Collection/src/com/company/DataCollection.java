@@ -18,7 +18,7 @@ public class DataCollection{
         String choiceIntendQuestion, choiceGivenQuestion;
         String filename, currentDirectory, defaultDirectory = null, defaultFilename = null, newDirectory="", newFilename;
         String filenameForm;
-        String subjectAmtStr, choiceAmtStr, mainVerbAmtStr, auxVerbAmtStr, sTypeStr, qWordStr, typeStr;
+        String subjectAmtStr, choiceAmtStr, mainVerbAmtStr, auxVerbAmtStr, sTypeStr, qWordStr, typeStr, isNegStr, yesNoIntendStr, yesNoGivenStr, choiceIntendStr, choiceGivenStr;
         String resumeStr;
 
         String[] outLine = new String[30];
@@ -421,6 +421,7 @@ public class DataCollection{
                 }
                 System.out.println(auxVerbAmt);
                 for (int auxInCount = 0; auxInCount < auxVerbAmt; auxInCount++) {
+                    System.out.println(mainVerb[auxInCount]);
                     if (mainVerb[auxInCount].equals("be") || mainVerb[auxInCount].equals("is") || mainVerb[auxInCount].equals("are") || mainVerb[auxInCount].equals("were") || mainVerb[auxInCount].equals("was") || mainVerb[auxInCount].equals("am")) {
                         isBe = true;
                     }
@@ -448,7 +449,12 @@ public class DataCollection{
 
 
                 //Negativity
-                isNeg = Integer.parseInt(JOptionPane.showInputDialog(null, "Is the question NEGATIVE?\n     1) Yes\n     2) No", "Negative", JOptionPane.PLAIN_MESSAGE));
+                isNegStr = JOptionPane.showInputDialog(null, "Is the question NEGATIVE?\n     1) Yes\n     2) No", "Negative", JOptionPane.PLAIN_MESSAGE);
+                if (isNegStr.equals(null)){
+                    throw new NullPointerException();
+                } else {
+                    isNeg = Integer.parseInt(isNegStr);
+                }
                 while (isNeg > 2 || isNeg < 1){
                     isNeg = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\nIs the question NEGATIVE?\n     1) Yes\n     2) No", "ERROR_Input", JOptionPane.PLAIN_MESSAGE));
                 }
@@ -470,9 +476,20 @@ public class DataCollection{
                 if (typeNum == 1) {
                     ansIntend = JOptionPane.showInputDialog(null, new JLabel("What was the INTENDED ANSWER?", JLabel.CENTER), "Intended Answer", JOptionPane.PLAIN_MESSAGE);
                 } else if (typeNum == 2) {
-                    yesNoIntend = Integer.parseInt(JOptionPane.showInputDialog(null, "What was the INTENDED ANSWER?\n     1) Yes\n     2) No","", JOptionPane.PLAIN_MESSAGE));
+                    yesNoIntendStr = JOptionPane.showInputDialog(null, "What was the INTENDED ANSWER?\n     1) Yes\n     2) No","Intended Answer", JOptionPane.PLAIN_MESSAGE);
+                    if (yesNoIntendStr.equals(null)){
+                        throw new NullPointerException();
+                    } else {
+                        yesNoIntend = Integer.parseInt(yesNoIntendStr);
+                    }
+
                     while (yesNoIntend <1 || yesNoIntend > 2) {
-                        yesNoIntend = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\nWhat was the INTENDED ANSWER?\n     1) Yes\n     2) No", "ERROR_Input", JOptionPane.PLAIN_MESSAGE));
+                        yesNoIntendStr = JOptionPane.showInputDialog(null, "Invalid input.\n\nWhat was the INTENDED ANSWER?\n     1) Yes\n     2) No","ERROR_Input", JOptionPane.PLAIN_MESSAGE);
+                        if (yesNoIntendStr.equals(null)){
+                            throw new NullPointerException();
+                        } else {
+                            yesNoIntend = Integer.parseInt(yesNoIntendStr);
+                        }
                     }
                     if (yesNoIntend == 1) {
                         ansIntend = "Yes";
@@ -484,9 +501,19 @@ public class DataCollection{
                     for (int choiceIntendNumCount = 0; choiceIntendNumCount < choiceAmt; choiceIntendNumCount++) {
                         choiceIntendQuestion = choiceIntendQuestion + "\n     " + (choiceIntendNumCount+1) + ") " + choice[choiceIntendNumCount];
                     }
-                    choiceIntend = Integer.parseInt(JOptionPane.showInputDialog(null, choiceIntendQuestion,"Intended Answer", JOptionPane.PLAIN_MESSAGE));
+                    choiceIntendStr = JOptionPane.showInputDialog(null, choiceIntendQuestion,"Intended Answer", JOptionPane.PLAIN_MESSAGE);
+                    if (choiceIntendStr.equals(null)){
+                        throw new NullPointerException();
+                    } else {
+                        choiceIntend = Integer.parseInt(choiceIntendStr);
+                    }
                     while (choiceIntend < 1 || choiceIntend > choiceAmt){
-                        choiceIntend = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\n" + choiceIntendQuestion,"ERROR_Input", JOptionPane.PLAIN_MESSAGE));
+                        choiceIntendStr = JOptionPane.showInputDialog(null, "Invalid input.\n\n" + choiceIntendQuestion,"ERROR_Input", JOptionPane.PLAIN_MESSAGE);
+                        if (choiceIntendStr.equals(null)){
+                            throw new NullPointerException();
+                        } else {
+                            choiceIntend = Integer.parseInt(choiceIntendStr);
+                        }
                     }
                     for (int choiceIntendOutCount = 0; choiceIntendOutCount < choiceAmt; choiceIntendOutCount++){
                         if (choiceIntend == (choiceIntendOutCount+1)){
@@ -500,9 +527,19 @@ public class DataCollection{
                 if (typeNum == 1) {
                     ansGiven = JOptionPane.showInputDialog(null, new JLabel("What was the GIVEN ANSWER?", JLabel.CENTER),"Given Answer", JOptionPane.PLAIN_MESSAGE);
                 } else if (typeNum == 2) {
-                    yesNoGiven = Integer.parseInt(JOptionPane.showInputDialog(null, "What was the GIVEN ANSWER?\n     1) Yes\n     2) No","Given Answer", JOptionPane.PLAIN_MESSAGE));
+                    yesNoGivenStr = JOptionPane.showInputDialog(null, "What was the GIVEN ANSWER?\n     1) Yes\n     2) No","Given Answer", JOptionPane.PLAIN_MESSAGE);
+                    if (yesNoGivenStr.equals(null)){
+                        throw new NullPointerException();
+                    } else {
+                        yesNoGiven = Integer.parseInt(yesNoGivenStr);
+                    }
                     while (yesNoGiven <1 || yesNoGiven > 2) {
-                        yesNoGiven = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\nWhat was the GIVEN ANSWER?\n     1) Yes\n     2) No","ERROR_Input", JOptionPane.PLAIN_MESSAGE));
+                        yesNoGivenStr = JOptionPane.showInputDialog(null, "Invalid input.\n\nWhat was the GIVEN ANSWER?\n     1) Yes\n     2) No","ERROR_Input", JOptionPane.PLAIN_MESSAGE);
+                        if (yesNoGivenStr.equals(null)){
+                            throw new NullPointerException();
+                        } else {
+                            yesNoGiven = Integer.parseInt(yesNoGivenStr);
+                        }
                     }
                     if (yesNoGiven == 1) {
                         ansGiven = "Yes";
@@ -514,9 +551,19 @@ public class DataCollection{
                     for (int choiceGivenNumCount = 0; choiceGivenNumCount < choiceAmt; choiceGivenNumCount++) {
                         choiceGivenQuestion = choiceGivenQuestion + "\n     " + (choiceGivenNumCount+1) + ") " + choice[choiceGivenNumCount];
                     }
-                    choiceGiven = Integer.parseInt(JOptionPane.showInputDialog(null, choiceGivenQuestion,"Given Answer", JOptionPane.PLAIN_MESSAGE));
+                    choiceGivenStr = JOptionPane.showInputDialog(null, choiceGivenQuestion,"Given Answer", JOptionPane.PLAIN_MESSAGE);
+                    if (choiceGivenStr.equals(null)){
+                        throw new NullPointerException();
+                    } else {
+                        choiceGiven = Integer.parseInt(choiceGivenStr);
+                    }
                     while (choiceGiven < 1 || choiceGiven > choiceAmt){
-                        choiceGiven = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\n" + choiceGivenQuestion,"ERROR_Input", JOptionPane.PLAIN_MESSAGE));
+                        choiceGivenStr = JOptionPane.showInputDialog(null, "Invalid input\n\n" + choiceGivenQuestion,"ERROR_Input", JOptionPane.PLAIN_MESSAGE);
+                        if (choiceGivenStr.equals(null)){
+                            throw new NullPointerException();
+                        } else {
+                            choiceGiven = Integer.parseInt(choiceGivenStr);
+                        }
                     }
                     for (int choiceGivenOutCount = 0; choiceGivenOutCount < choiceAmt; choiceGivenOutCount++){
                         if (choiceGiven == (choiceGivenOutCount+1)){
@@ -638,8 +685,6 @@ public class DataCollection{
                 cancelChoice = JOptionPane.showOptionDialog(null, new JLabel("<html>Are you sure you want to exit?</html>", JLabel.CENTER), "Cancel", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null, cancelOptions, "Restart");
                 if (cancelChoice == 1){
                     System.exit(2);
-                } else {
-                    continue;
                 }
             } catch (java.lang.StringIndexOutOfBoundsException noInput){
                 JOptionPane.showMessageDialog(null, "Something went wrong.\nBe sure to enter at least one character at every entry window.", "ERROR_NoInput", JOptionPane.ERROR_MESSAGE);
