@@ -1,7 +1,6 @@
 package com.company;
 
 import javax.swing.*;
-import java.awt.*;
 import java.io.*;
 import java.lang.*;
 import java.util.Arrays;
@@ -18,8 +17,9 @@ public class DataCollection{
     static String filenameForm;
     static String subjectAmtStr, choiceAmtStr, mainVerbAmtStr, auxVerbAmtStr, sTypeStr, qWordStr, typeStr, isNegStr, yesNoIntendStr, yesNoGivenStr, choiceIntendStr, choiceGivenStr;
     static String resumePoint;
+    static String dividerLine = "", borderLine;
 
-    static String[] outLine = new String[30];
+    static String[] outLine = new String[40];
     static String[] choice = new String[10];
     static String[] subject = new String[10], mainVerb = new String[10], auxVerb = new String[10];
     static String[] subjectOut = new String[10], mainVerbOut = new String[10], auxVerbOut = new String[10];
@@ -30,14 +30,17 @@ public class DataCollection{
     static int subjectAmt, choiceAmt, mainVerbAmt = 0, auxVerbAmt;
     static int subjectForm, auxVerbForm, mainVerbForm, qWordForm, typeForm, sTypeForm, negForm, questionLength, lineNum, choiceLineNum = 0;
     static int auxLengthMax, mainLengthMax, subLengthMax, greatestAmt, greatestLength;
+    static int oldLineIndex;
     static int[] subLength = new int[10];
     static int[] mainLength = new int[10];
     static int[] auxLength = new int[10];
     static int[] allAmts = new int[5];
     static int[] allLengths = new int[10];
+    static int[] lineIndex = new int[10];
     static char questionEndChar;
     static boolean isBe = false, brSet = false;
     static boolean needsResume = false;
+    static boolean haveLineIndex = false;
 
     static JFileChooser chooser = new JFileChooser();
     static BufferedReader br = null;
@@ -48,10 +51,7 @@ public class DataCollection{
     public static void main(String[] args){
 
         //ToDo: Make fancy-looking startup menu
-        //ToDo: Accommodate for all sentence types
-        //ToDo: Data control to ensure Strings are not parsed to Ints
         //ToDo: Limit all aspects to only 9 per question
-
 
         //Get report file directory
 
@@ -270,7 +270,7 @@ public class DataCollection{
                 //ToDo: New layout
 
                 outLine[0] = "Question: " + questionOut + "\n";
-                outLine[1] = "";
+                outLine[1] = " ";
                 outLine[2] = "   ----------------------------------------------- ";
                 outLine[3] = "  | Sentence Type | Question Type | Q. Word | Neg |";
                 outLine[4] = "  |---------------|---------------|---------|-----|";
@@ -319,7 +319,7 @@ public class DataCollection{
                     subjectOut[subFormatCount] = subject[subFormatCount];
                     subjectForm = greatestLength - subject[subFormatCount].length();
                     for (int subjectCount = 0; subjectCount < subjectForm; subjectCount++) {
-                        subjectOut[subjectCount] = subjectOut[subjectCount] + " ";
+                        subjectOut[subFormatCount] += " ";
                     }
                     subjectOutput = subjectOutput + subjectOut[subFormatCount] + " | ";
                 }
@@ -368,7 +368,7 @@ public class DataCollection{
                 //ToDo: Finish this
                 //Goes up to the | before subject
                 //Need to add 3 more dashes per term
-                outLine[7] = "   -------------------------";
+                outLine[7] = "   ------------------------";
                 for (int outLine7Count = 1; outLine7Count <= greatestAmt; outLine7Count++){
                     for (int outLine7Count2 = 1; outLine7Count2 <= greatestLength; outLine7Count2++){
                         outLine[7] = outLine[7] + "-";
@@ -379,46 +379,78 @@ public class DataCollection{
                 }
 
                 outLine[7] = outLine[7] + " ";
+                borderLine = outLine[7];
                 outLine[8] = "  | Subject(s):        | " + subjectAmt + " | " + subjectOutput;
-                outLine[9] = "  |--------------------|---|";
 
-                for (int finalOutCount = 0; finalOutCount <= 8; finalOutCount++){
+                dividerLine = "  " + outLine[8].substring((outLine[8].indexOf("|")), (outLine[8].length() - 1)).replaceAll("[^|]","-");
+
+                outLine[9] = dividerLine;
+                outLine[10] = "  | Main Verb(s):      | " + mainVerbAmt + " | " + mainVerbOutput;
+                outLine[11] = dividerLine;
+                outLine[12] = "  | Auxiliary Verb(s): | " + auxVerbAmt + " | " + auxVerbOutput;
+                outLine[13] = borderLine;
+                outLine[14] = " ";
+
+                //Print choices
+                if (typeNum == 3){
+                    outLine[15] = "  Choices:";
+                    for (int choiceOutput = 0; choiceOutput <= choiceAmt; choiceOutput++){
+                        try {
+                            if (!(choice[choiceOutput].equals(null))) {
+                                outLine[choiceOutput + 16] = "    " + choice[choiceOutput];
+                            } else {
+                                //Print answers if choices
+                                outLine[choiceOutput + 16] = " ";
+                                outLine[choiceOutput + 17] = "Intended Answer: " + ansIntend;
+                                outLine[choiceOutput + 18] = "Given Answer: " + ansGiven;
+                            }
+                        } catch (NullPointerException endChoicesOut){
+                            //Print answers if choices
+                            outLine[choiceOutput + 16] = " ";
+                            outLine[choiceOutput + 17] = "Intended Answer: " + ansIntend;
+                            outLine[choiceOutput + 18] = "Given Answer: " + ansGiven;
+                            lineNum = choiceOutput + 18;
+                        }
+                    }
+                } else {
+                    //Print answers if no choices
+                    outLine[15] = "Intended Answer: " + ansIntend;
+                    outLine[16] = "Given Answer: " + ansGiven;
+                    lineNum = 16;
+                }
+
+
+                for (int finalOutCount = 0; finalOutCount <= 38; finalOutCount++){
                     System.out.println(outLine[finalOutCount]);
                 }
-                System.exit(9);
 
 
-
-
-
-
-
-/*
-            //Write data to file
-            try {
-                fw = new FileWriter(filename, true);
-                bw = new BufferedWriter(fw);
-                bw.newLine();
-                bw.newLine();
-                for (int writeCount = 0; writeCount <= lineNum; writeCount++) {
-                    bw.write(outLine[writeCount]);
-                    bw.newLine();
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
+                //Write data to file
                 try {
-                    if (bw != null) {
-                        bw.close();
+                    fw = new FileWriter(filename, true);
+                    bw = new BufferedWriter(fw);
+                    bw.newLine();
+                    bw.newLine();
+                    for (int writeCount = 0; writeCount <= lineNum; writeCount++) {
+                        if (!(outLine[writeCount].equals(null))){
+                            bw.write(outLine[writeCount]);
+                            bw.newLine();
+                        }
                     }
-                    if (fw != null) {
-                        fw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } finally {
+                    try {
+                        if (bw != null) {
+                            bw.close();
+                        }
+                        if (fw != null) {
+                            fw.close();
+                        }
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
                     }
-                } catch (IOException ex) {
-                    ex.printStackTrace();
                 }
-            }
-*/
 
                 //Ask to continue
                 isDone = Integer.parseInt(JOptionPane.showInputDialog(null, "Continue entering questions?\n     1) Yes\n     2) No","Continue", JOptionPane.PLAIN_MESSAGE));
@@ -426,18 +458,9 @@ public class DataCollection{
                     isDone = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\nContinue entering questions?\n     1) Yes\n     2) No", "ERROR_Input", JOptionPane.PLAIN_MESSAGE));
                 }
 
-            } catch (java.lang.NumberFormatException numEx){
-                JOptionPane.showMessageDialog(null, new JLabel ("<html>Something went wrong.<br>Be sure to enter a numeric value where requested.</html>", SwingConstants.CENTER), "ERROR_NumForm", JOptionPane.ERROR_MESSAGE);
-                numEx.printStackTrace();
-            } catch (java.lang.NullPointerException cancel){
-                cancel.printStackTrace();
-                Object[] cancelOptions = {"Resume", "Restart", "Quit"};
-                cancelChoice = JOptionPane.showOptionDialog(null, new JLabel("<html>Are you sure you want to exit?</html>", JLabel.CENTER), "Cancel", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null, cancelOptions, "Restart");
-                if (cancelChoice == 1){
-                    System.exit(2);
-                } //ToDo: make it so that you can resume from previous point
-            } catch (java.lang.StringIndexOutOfBoundsException noInput){
-                JOptionPane.showMessageDialog(null, "Something went wrong.\nBe sure to enter at least one character at every entry window.", "ERROR_NoInput", JOptionPane.ERROR_MESSAGE);
+            } catch (Exception exception) {
+                JOptionPane.showMessageDialog(null, new JLabel("<html>Something went wrong.<br>Restart the program and try again.</html>", SwingConstants.CENTER), "ERROR", JOptionPane.ERROR_MESSAGE);
+                exception.printStackTrace();
             }
         }
     }
@@ -603,7 +626,7 @@ public class DataCollection{
                         choiceAmt = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\nHow many choices are there?", "ERROR_Input", JOptionPane.PLAIN_MESSAGE));
                     }
                     for (int choiceCount = 0; choiceCount < choiceAmt; choiceCount++) {
-                        choice[choiceCount] = JOptionPane.showInputDialog(null, new JLabel("What is choice " + (choiceCount + 1) + "?", JLabel.CENTER), "", JOptionPane.PLAIN_MESSAGE);
+                        choice[choiceCount] = JOptionPane.showInputDialog(null, new JLabel("What is CHOICE " + (choiceCount + 1) + "?", JLabel.CENTER), "Choices", JOptionPane.PLAIN_MESSAGE);
                     }
                 }
             } catch (java.lang.NullPointerException cancel) {
@@ -625,7 +648,6 @@ public class DataCollection{
             }
         } while (needsResume);
     }
-
 
     public static void enterQuestionWord(){
         do {
@@ -1015,5 +1037,3 @@ public class DataCollection{
     }
 
 }
-
-
