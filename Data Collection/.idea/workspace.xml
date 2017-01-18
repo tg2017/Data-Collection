@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="544f94a4-7e5a-42f2-ae3d-b67e651c79d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.class" afterPath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appdata.txt" afterPath="$PROJECT_DIR$/appdata.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/DataCollection.java" afterPath="$PROJECT_DIR$/src/com/company/DataCollection.java" />
     </list>
     <ignored path="Data Collection.iws" />
@@ -29,12 +27,14 @@
       <file leaf-file-name="DataCollection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="405" column="29" lean-forward="true" selection-start-line="405" selection-start-column="29" selection-end-line="405" selection-end-column="29" />
+            <state relative-caret-position="318">
+              <caret line="658" column="0" lean-forward="true" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+                <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -42,13 +42,13 @@
                 <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-                <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-                <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-                <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-                <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-                <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-                <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-                <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+                <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+                <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+                <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+                <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+                <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+                <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+                <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
               </folding>
             </state>
           </provider>
@@ -94,8 +94,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-407" />
-    <option name="y" value="83" />
+    <option name="x" value="-201" />
+    <option name="y" value="629" />
     <option name="width" value="1616" />
     <option name="height" value="918" />
   </component>
@@ -272,6 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,9 +305,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,8 +570,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-407" y="83" width="1616" height="918" extended-state="0" />
-    <editor active="false" />
+    <frame x="-201" y="629" width="1616" height="918" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -583,7 +583,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45012787" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.028132992" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -616,7 +616,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -631,8 +631,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -640,13 +642,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -671,8 +673,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -680,13 +684,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -711,8 +715,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -720,13 +726,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -751,8 +757,10 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -760,13 +768,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -784,8 +792,10 @@
           <caret line="315" column="35" lean-forward="false" selection-start-line="315" selection-start-column="35" selection-end-line="315" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -793,13 +803,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -817,8 +827,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -826,13 +838,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -843,8 +855,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -852,13 +866,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -869,8 +883,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -878,13 +894,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -895,8 +911,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -904,13 +922,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -921,8 +939,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -930,13 +950,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -947,8 +967,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -956,13 +978,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -973,8 +995,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -982,13 +1006,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -999,8 +1023,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1008,46 +1034,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1065,8 +1058,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1074,13 +1069,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1098,8 +1093,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1107,13 +1104,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1131,8 +1128,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1140,13 +1139,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1164,8 +1163,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1173,13 +1174,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1197,8 +1198,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1206,13 +1209,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1230,8 +1233,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1239,13 +1244,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1263,8 +1268,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1272,13 +1279,48 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1324,8 +1366,10 @@
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1333,13 +1377,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1372,18 +1416,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="803" column="16" lean-forward="false" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="405" column="29" lean-forward="true" selection-start-line="405" selection-start-column="29" selection-end-line="405" selection-end-column="29" />
+        <state relative-caret-position="318">
+          <caret line="658" column="0" lean-forward="true" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
+            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
@@ -1391,13 +1436,13 @@
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-            <marker date="1484611977222" expanded="true" signature="2783:4038" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4088:4221" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="4244:4288" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="4495:7223" ph="{...}" />
-            <marker date="1484611977222" expanded="false" signature="7229:12538" ph="{...}" />
-            <marker date="1484611977222" expanded="true" signature="12844:12895" ph="..." />
-            <marker date="1484611977222" expanded="true" signature="12947:13039" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="2727:3982" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4032:4165" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="4188:4232" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="4439:7167" ph="{...}" />
+            <marker date="1484698056640" expanded="false" signature="7173:12482" ph="{...}" />
+            <marker date="1484698056640" expanded="true" signature="12788:12839" ph="..." />
+            <marker date="1484698056640" expanded="true" signature="12891:12983" ph="..." />
           </folding>
         </state>
       </provider>

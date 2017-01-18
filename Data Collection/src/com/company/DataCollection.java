@@ -7,6 +7,7 @@ import java.util.Arrays;
 
 
 public class DataCollection{
+
     final static int SUBOUTLENGTH = 17, TYPEOUTLENGTH = 13, QWORDLENGTH = 7, AUXVERBOUTLENGTH = 14, NEGOUTLENGTH = 3, MAINVERBOUTLENGTH = 13, STYPEOUTLENGTH = 13;
 
     static String qWord, type, sType, question, ansIntend, ansGiven, testStr;
@@ -51,7 +52,6 @@ public class DataCollection{
     public static void main(String[] args){
 
         //ToDo: Make fancy-looking startup menu
-        //ToDo: Limit all aspects to only 9 per question
 
         //Get report file directory
 
@@ -430,13 +430,15 @@ public class DataCollection{
                     fw = new FileWriter(filename, true);
                     bw = new BufferedWriter(fw);
                     bw.newLine();
-                    bw.newLine();
                     for (int writeCount = 0; writeCount <= lineNum; writeCount++) {
                         if (!(outLine[writeCount].equals(null))){
                             bw.write(outLine[writeCount]);
                             bw.newLine();
                         }
                     }
+                    bw.newLine();
+                    bw.write("*****************************************************************************************");
+                    bw.newLine();
                 } catch (IOException e) {
                     e.printStackTrace();
                 } finally {
@@ -461,6 +463,7 @@ public class DataCollection{
             } catch (Exception exception) {
                 JOptionPane.showMessageDialog(null, new JLabel("<html>Something went wrong.<br>Restart the program and try again.</html>", SwingConstants.CENTER), "ERROR", JOptionPane.ERROR_MESSAGE);
                 exception.printStackTrace();
+                isDone = 1;
             }
         }
     }
@@ -616,14 +619,19 @@ public class DataCollection{
                 needsResume = false;
                 choiceAmt = 0;
                 if (typeNum == 3) {
-                    choiceAmtStr = JOptionPane.showInputDialog(null, new JLabel("How many choices are there?", JLabel.CENTER), "Choices", JOptionPane.PLAIN_MESSAGE);
+                    choiceAmtStr = JOptionPane.showInputDialog(null, new JLabel("How many CHOICES are there?", JLabel.CENTER), "Choices", JOptionPane.PLAIN_MESSAGE);
                     if (choiceAmtStr.equals(null)) {
                         throw new NullPointerException();
                     } else {
                         choiceAmt = Integer.parseInt(choiceAmtStr);
                     }
-                    while (choiceAmt < 1 || choiceAmt > 10) {
-                        choiceAmt = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\nHow many choices are there?", "ERROR_Input", JOptionPane.PLAIN_MESSAGE));
+                    while (choiceAmt < 1 || choiceAmt > 9) {
+                        choiceAmtStr = JOptionPane.showInputDialog(null, "Invalid input.\nThere cannot be less than 1 or more than 9 choices.\n\nHow many CHOICES are there?", "ERROR_Input", JOptionPane.PLAIN_MESSAGE);
+                        if (choiceAmtStr.equals(null)) {
+                            throw new NullPointerException();
+                        } else {
+                            choiceAmt = Integer.parseInt(choiceAmtStr);
+                        }
                     }
                     for (int choiceCount = 0; choiceCount < choiceAmt; choiceCount++) {
                         choice[choiceCount] = JOptionPane.showInputDialog(null, new JLabel("What is CHOICE " + (choiceCount + 1) + "?", JLabel.CENTER), "Choices", JOptionPane.PLAIN_MESSAGE);
@@ -723,10 +731,16 @@ public class DataCollection{
                 } else {
                     subjectAmt = Integer.parseInt(subjectAmtStr);
                 }
+                while (subjectAmt < 1 || subjectAmt > 9) {
+                    subjectAmtStr = JOptionPane.showInputDialog(null, new JLabel("<html>Invalid input.<br>There cannot be less than 0 or more than 9 subjects.<br><br>How many SUBJECTS are there?</html>", JLabel.CENTER), "ERROR_Input", JOptionPane.PLAIN_MESSAGE);
+                    if (subjectAmtStr.equals(null)) {
+                        throw new NullPointerException();
+                    } else {
+                        subjectAmt = Integer.parseInt(subjectAmtStr);
+                    }
+                }
                 if (subjectAmt == 1) {
                     subject[0] = JOptionPane.showInputDialog(null, new JLabel("What is the SUBJECT?", JLabel.CENTER),"Subject", JOptionPane.PLAIN_MESSAGE);
-                } else if (subjectAmt < 1 || subjectAmt > 5) {
-                    subjectAmt = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\nHow many SUBJECTS are there?","ERROR_Input", JOptionPane.PLAIN_MESSAGE));
                 } else {
                     for (int subAmtCount = 0; subAmtCount <= (subjectAmt - 1); subAmtCount++) {
                         subject[subAmtCount] = JOptionPane.showInputDialog(null, new JLabel("What is SUBJECT " + (subAmtCount + 1) + "?", JLabel.CENTER),"Subject", JOptionPane.PLAIN_MESSAGE);
@@ -758,12 +772,24 @@ public class DataCollection{
                 needsResume = false;
                 if (sTypeNum == 1) {
                     mainVerb[0] = JOptionPane.showInputDialog(null, new JLabel("What is the MAIN VERB?", JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
+                    mainVerbAmt = 1;
                 } else {
                     mainVerbAmtStr = JOptionPane.showInputDialog(null, new JLabel("How many MAIN VERBS are there?", JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
                     if (mainVerbAmtStr.equals(null)) {
                         throw new NullPointerException();
                     } else {
                         mainVerbAmt = Integer.parseInt(mainVerbAmtStr);
+                        while (mainVerbAmt < 0 || mainVerbAmt > 9){
+                            mainVerbAmtStr = JOptionPane.showInputDialog(null, new JLabel("<html>Invalid input.<br>There cannot be less than 0 or more than 9 main verbs.<br><br>How many MAIN VERBS are there?</html>", JLabel.CENTER), "ERROR_Input", JOptionPane.PLAIN_MESSAGE);
+                            if (mainVerbAmtStr.equals(null)) {
+                                throw new NullPointerException();
+                            } else {
+                                mainVerbAmt = Integer.parseInt(mainVerbAmtStr);
+                            }
+                        }
+                        if (mainVerbAmt == 1){
+                            mainVerb[0] = JOptionPane.showInputDialog(null, new JLabel("What is the MAIN VERB?", JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
+                        }
                         for (int mainInCount = 0; mainInCount < mainVerbAmt; mainInCount++) {
                             mainVerb[mainInCount] = JOptionPane.showInputDialog(null, new JLabel("What is MAIN VERB " + (mainInCount + 1) + "?", JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
                         }
@@ -800,29 +826,27 @@ public class DataCollection{
                 } else {
                     auxVerbAmt = Integer.parseInt(auxVerbAmtStr);
                 }
+                while (auxVerbAmt > 9 || auxVerbAmt < 0) {
+                    auxVerbAmtStr = JOptionPane.showInputDialog(null, new JLabel("<html>Invalid input.<br>There cannot be less than 0 or more than 9 auxiliary verbs.<br><br>How many AUXILIARY VERBS are there?</html>", JLabel.CENTER), "ERROR_Input", JOptionPane.PLAIN_MESSAGE);
+                    if (auxVerbAmtStr.equals(null)) {
+                        throw new NullPointerException();
+                    } else {
+                        auxVerbAmt = Integer.parseInt(mainVerbAmtStr);
+                    }
+                }
                 System.out.println(auxVerbAmt);
                 for (int auxInCount = 0; auxInCount < auxVerbAmt; auxInCount++) {
                     System.out.println(mainVerb[auxInCount]);
-                    try {
-                        if (mainVerb[auxInCount].equals("be") || mainVerb[auxInCount].equals("is") || mainVerb[auxInCount].equals("are") || mainVerb[auxInCount].equals("were") || mainVerb[auxInCount].equals("was") || mainVerb[auxInCount].equals("am")) {
-                            isBe = true;
-                        } else {
-                            isBe = false;
-                        }
-                    } catch (NullPointerException moreAuxThanMain){
-                        moreAuxThanMain.printStackTrace();
-                        isBe = false;
-                    }
-                    if (isBe) {
+                    if (auxVerbAmt == 0) {
                         auxVerb[auxInCount] = "N/A";
-                    } else if (auxVerbAmt > 1) {
+                    } else if (auxVerbAmt > 1 && auxVerbAmt < 9) {
                         auxVerb[auxInCount] = JOptionPane.showInputDialog(null, new JLabel("What is AUXILIARY VERB " + (auxInCount + 1) + "?", JLabel.CENTER), "Auxiliary Verb", JOptionPane.PLAIN_MESSAGE);
                     } else if (auxVerbAmt == 1){
                         auxVerb[auxInCount] = JOptionPane.showInputDialog(null, new JLabel("What is the AUXILIARY VERB?", JLabel.CENTER), "Auxiliary Verb", JOptionPane.PLAIN_MESSAGE);
                     } else {
                         auxVerb[auxInCount] = "ERROR";
                     }
-                    if (!(auxVerb[auxInCount].equalsIgnoreCase("N/A")) && !(auxVerb[auxInCount].equals("ERROR"))){
+                    if (!(auxVerb[auxInCount].equalsIgnoreCase("N/A")) && !(auxVerb[auxInCount].equals("ERROR"))){ //Makes aux verbs lowercase
                         auxVerb[auxInCount] = auxVerb[auxInCount].toLowerCase();
                     }
                 }
