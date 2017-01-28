@@ -1,5 +1,4 @@
 @echo off
-
 javac DataCollection.java
-java DataCollection
+java com.company.DataCollection
 pause
