@@ -46,6 +46,7 @@ public class DataCollection{
     static boolean isBe = false, brSet = false;
     static boolean needsResume = false;
     static boolean haveLineIndex = false;
+    static boolean markSet = false;
 
     static JFileChooser chooser = new JFileChooser();
     static BufferedReader br = null;
@@ -58,6 +59,8 @@ public class DataCollection{
     static JLabel labelText;
     static ActionListener actionListener;
     static GridBagConstraints gbc = new GridBagConstraints();
+
+    //TODO: reset bufferedreader back to beginning of appdata.txt
 
     public DataCollection() {
         menu();
@@ -161,6 +164,11 @@ public class DataCollection{
         while (!brSet) {
             try {
                 br = new BufferedReader(new FileReader(currentDirectory + "\\appdata.txt"));
+                if (br.markSupported()) {
+                    if (markSet == false) {
+                        br.mark(0);
+                    }
+                }
                 brSet = true;
             } catch (FileNotFoundException e) {
                 brSet = false;
@@ -188,11 +196,14 @@ public class DataCollection{
                         ex.printStackTrace();
                     }
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
         //Find default save location
         try {
             assert br != null; //Because of while loop above (while !brset)
+            br.reset();
             defaultDirectory = br.readLine();
             defaultFilename = br.readLine();
         } catch (IOException e) {
@@ -499,6 +510,11 @@ public class DataCollection{
         while (!brSet) {
             try {
                 br = new BufferedReader(new FileReader(currentDirectory + "\\appdata.txt"));
+                if (br.markSupported()) {
+                    if (markSet == false) {
+                        br.mark(0);
+                    }
+                }
                 brSet = true;
             } catch (FileNotFoundException e) {
                 brSet = false;
@@ -526,11 +542,25 @@ public class DataCollection{
                         ex.printStackTrace();
                     }
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    if (bw != null) {
+                        bw.close();
+                    }
+                    if (fw != null) {
+                        fw.close();
+                    }
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
         }
         //Find default save location
         try {
             assert br != null; //Because of while loop above (while !brset)
+            br.reset();
             defaultDirectory = br.readLine();
             defaultFilename = br.readLine();
         } catch (IOException e) {

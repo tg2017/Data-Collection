@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="544f94a4-7e5a-42f2-ae3d-b67e651c79d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/Menu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.class" afterPath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appdata.txt" afterPath="$PROJECT_DIR$/appdata.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.bat" afterPath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/DataCollection.bat" afterPath="$PROJECT_DIR$/src/com/company/DataCollection.bat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/DataCollection.java" afterPath="$PROJECT_DIR$/src/com/company/DataCollection.java" />
     </list>
     <ignored path="Data Collection.iws" />
@@ -32,19 +28,10 @@
       <file leaf-file-name="DataCollection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="202">
+              <caret line="566" column="32" lean-forward="true" selection-start-line="566" selection-start-column="32" selection-end-line="566" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-                <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-                <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-                <element signature="e#22090#22117#0" expanded="false" />
-                <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-                <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-                <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-                <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-                <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -59,13 +46,9 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="34" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="493">
+              <caret line="34" column="9" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="34" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,8 +71,14 @@
       <find>System.exit(2)</find>
       <find>new DataCollection()</find>
       <find>if (cancelChoice == 1) {</find>
-      <find>menu()</find>
       <find>needsResume = false</find>
+      <find>filewriter</find>
+      <find>menu</find>
+      <find>menu()</find>
+      <find>reset</find>
+      <find>defaultDirectory = br.readLine();</find>
+      <find>br.mark(0);</find>
+      <find>brSet = true;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,9 +105,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
+    <option name="x" value="-6" />
+    <option name="y" value="830" />
+    <option name="width" value="1612" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -294,9 +283,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -617,8 +606,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="-6" y="830" width="1612" height="876" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -630,13 +619,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.012162162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.054054055" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13909775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -648,6 +636,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -663,7 +652,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -672,13 +661,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -692,15 +674,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -731,15 +704,6 @@
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -763,15 +727,6 @@
           <caret line="315" column="35" lean-forward="false" selection-start-line="315" selection-start-column="35" selection-end-line="315" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -795,15 +750,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -820,15 +766,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -845,15 +782,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -870,15 +798,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -895,15 +814,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -920,15 +830,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -945,15 +846,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -970,15 +862,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1002,15 +885,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1034,15 +908,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1066,15 +931,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1098,15 +954,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1130,15 +977,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1162,15 +1000,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1194,15 +1023,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1226,15 +1046,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1286,15 +1097,6 @@
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
@@ -1355,13 +1157,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="493">
+          <caret line="34" column="9" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="34" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,25 +1167,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="912" column="10" lean-forward="true" selection-start-line="912" selection-start-column="10" selection-end-line="912" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="202">
+          <caret line="566" column="32" lean-forward="true" selection-start-line="566" selection-start-column="32" selection-end-line="566" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#22090#22117#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
