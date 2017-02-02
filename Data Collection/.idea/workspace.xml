@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="544f94a4-7e5a-42f2-ae3d-b67e651c79d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection$1.class" afterPath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.class" afterPath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/company/DataCollection.bat" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/DataCollection.class" afterPath="$PROJECT_DIR$/src/com/company/DataCollection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appdata.txt" afterPath="$PROJECT_DIR$/appdata.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/DataCollection.java" afterPath="$PROJECT_DIR$/src/com/company/DataCollection.java" />
     </list>
@@ -31,20 +31,17 @@
       <file leaf-file-name="DataCollection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="200" column="9" lean-forward="true" selection-start-line="200" selection-start-column="9" selection-end-line="200" selection-end-column="9" />
+            <state relative-caret-position="273">
+              <caret line="211" column="25" lean-forward="true" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
               <folding>
-                <element signature="e#5666#5693#0" expanded="false" />
-                <element signature="e#14963#14982#0" expanded="false" />
-                <element signature="e#20441#20468#0" expanded="false" />
+                <element signature="e#15266#15285#0" expanded="false" />
+                <element signature="e#20670#20697#0" expanded="false" />
                 <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-                <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-                <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -53,11 +50,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BufferedReader.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/BufferedReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="511" column="0" lean-forward="false" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-467">
+              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="appdata.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/appdata.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+            <state relative-caret-position="0">
+              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -100,9 +117,14 @@
       <find>br.mark(0);</find>
       <find>brSet = true;</find>
       <find>cancel</find>
-      <find>filename</find>
       <find>gbc</find>
       <find>.txt</find>
+      <find>Compound-Complex</find>
+      <find>choiceAmt</find>
+      <find>filename</find>
+      <find>br</find>
+      <find>br.</find>
+      <find>mark(0)</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,16 +147,17 @@
         <option value="$PROJECT_DIR$/src/com/company/Tester.java" />
         <option value="$PROJECT_DIR$/src/com/company/Menu.java" />
         <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/../../TestDoc.txt" />
         <option value="$PROJECT_DIR$/appdata.txt" />
         <option value="$PROJECT_DIR$/src/com/company/DataCollection.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="x" value="-167" />
+    <option name="y" value="500" />
+    <option name="width" value="1612" />
+    <option name="height" value="866" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -309,9 +332,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,6 +365,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -632,8 +655,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="-167" y="500" width="1612" height="866" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -645,12 +668,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25675675" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26438355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13909775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03108108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -662,7 +686,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -678,7 +701,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -687,36 +710,19 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -736,17 +742,14 @@
         <state relative-caret-position="5355">
           <caret line="315" column="35" lean-forward="false" selection-start-line="315" selection-start-column="35" selection-end-line="315" selection-end-column="35" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -766,17 +769,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -789,17 +789,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -812,17 +809,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -835,17 +829,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -858,17 +849,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -881,17 +869,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -904,17 +889,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -927,17 +909,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -957,17 +936,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -987,17 +963,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -1017,17 +990,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -1047,17 +1017,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -1077,17 +1044,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -1107,17 +1071,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -1137,17 +1098,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -1167,17 +1125,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -1225,17 +1180,14 @@
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
@@ -1309,14 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1325,30 +1269,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../TestDoc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-467">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/appdata.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="511" column="0" lean-forward="false" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="200" column="9" lean-forward="true" selection-start-line="200" selection-start-column="9" selection-end-line="200" selection-end-column="9" />
+        <state relative-caret-position="273">
+          <caret line="211" column="25" lean-forward="true" selection-start-line="211" selection-start-column="25" selection-end-line="211" selection-end-column="25" />
           <folding>
-            <element signature="e#5666#5693#0" expanded="false" />
-            <element signature="e#14963#14982#0" expanded="false" />
-            <element signature="e#20441#20468#0" expanded="false" />
+            <element signature="e#15266#15285#0" expanded="false" />
+            <element signature="e#20670#20697#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />

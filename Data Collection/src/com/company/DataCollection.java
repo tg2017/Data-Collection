@@ -44,7 +44,7 @@ public class DataCollection{
     static char questionEndChar;
     static boolean isBe = false, brSet = false;
     static boolean needsResume = false;
-    static boolean haveLineIndex = false;
+    static boolean isOther = false;
     static boolean markSet = false;
 
     static JFileChooser chooser = new JFileChooser();
@@ -56,7 +56,7 @@ public class DataCollection{
 
     static JFrame menu;
     static JPanel textPanel, buttonPanel;
-    static JButton startButton, exitButton, defaultsButton, aboutButton;
+    static JButton startButton, exitButton, defaultsButton, chartsButton;
     static JLabel labelText, smallLabelText;
     static ActionListener actionListener;
 
@@ -92,9 +92,8 @@ public class DataCollection{
                     System.exit(3);
                 } else if (buttonClicked.equals("Defaults")){
                     resetDefaults();
-                } else if (buttonClicked.equals("About")){
-                    //TODO: open README
-                    openREADME();
+                } else if (buttonClicked.equals("Charts")){
+                    openCharts();
                 }
 
             }
@@ -122,10 +121,10 @@ public class DataCollection{
         exitButton.setActionCommand("Exit");
         buttonPanel.add(exitButton);
 
-        aboutButton = new JButton("About");
-        aboutButton.setBounds(70, 45, 125, 30);
-        aboutButton.setActionCommand("About");
-        buttonPanel.add(aboutButton);
+        chartsButton = new JButton("View Charts");
+        chartsButton.setBounds(70, 45, 125, 30);
+        chartsButton.setActionCommand("Charts");
+        buttonPanel.add(chartsButton);
 
         defaultsButton = new JButton("Reset Defaults");
         defaultsButton.setBounds(205, 5, 125, 30);
@@ -137,7 +136,7 @@ public class DataCollection{
 
         startButton.addActionListener(actionListener);
         exitButton.addActionListener(actionListener);
-        aboutButton.addActionListener(actionListener);
+        chartsButton.addActionListener(actionListener);
         defaultsButton.addActionListener(actionListener);
     }
 
@@ -155,8 +154,8 @@ public class DataCollection{
             try {
                 br = new BufferedReader(new FileReader(currentDirectory + "\\appdata.txt"));
                 if (br.markSupported()) {
-                    if (markSet == false) {
-                        br.mark(0);
+                    if (!markSet) {
+                        br.mark(200);
                     }
                 }
                 brSet = true;
@@ -188,6 +187,7 @@ public class DataCollection{
                 }
             } catch (IOException e) {
                 e.printStackTrace();
+                brSet = false;
             }
         }
         //Find default save location
@@ -201,8 +201,16 @@ public class DataCollection{
         }
         //Make defaults if none
         if (defaultDirectory.equals("NoDefault") || defaultFilename.equals("NoDefault")) { resetDefaults(); } else { //Else begin program
+            filename = defaultDirectory + "\\" + defaultFilename;
+            //Add ".txt"
+            filenameForm = filename.substring(filename.length() - 4);
+            if (!filenameForm.equals(".txt")) {
+                filename += ".txt";
+            }
+            System.out.println("Report will be saved as " + filename);
 
             //Begin input
+            isDone = 1;
             while (isDone == 1) {
                 try {
                     //Question
@@ -233,7 +241,7 @@ public class DataCollection{
                     resumePoint = "mainverb";
                     enterMainVerb();
 
-                    //Auxiliary Verb (there is no aux verb if main verb is "be")
+                    //Auxiliary Verb
                     resumePoint = "auxverb";
                     enterAuxVerb();
 
@@ -403,11 +411,6 @@ public class DataCollection{
                     }
 
 
-                    for (int finalOutCount = 0; finalOutCount <= 38; finalOutCount++) {
-                        System.out.println(outLine[finalOutCount]);
-                    }
-
-
                     //Write data to file
                     System.out.println("filename:" + filename);
                     try {
@@ -443,6 +446,9 @@ public class DataCollection{
                     while (isDone > 2 || isDone < 1) {
                         isDone = Integer.parseInt(JOptionPane.showInputDialog(null, "Invalid input.\n\nContinue entering questions?\n     1) Yes\n     2) No", "ERROR_Input", JOptionPane.PLAIN_MESSAGE));
                     }
+                    if (isDone == 2){
+                        new DataCollection();
+                    }
                 } catch (Exception exception) {
                     JOptionPane.showMessageDialog(null, new JLabel("<html>Something went wrong.<br>Restart the program and try again.</html>", SwingConstants.CENTER), "ERROR", JOptionPane.ERROR_MESSAGE);
                     exception.printStackTrace();
@@ -463,7 +469,7 @@ public class DataCollection{
                 br = new BufferedReader(new FileReader(currentDirectory + "\\appdata.txt"));
                 if (br.markSupported()) {
                     if (markSet == false) {
-                        br.mark(0);
+                        br.mark(200);
                     }
                 }
                 brSet = true;
@@ -618,7 +624,7 @@ public class DataCollection{
 
     }
 
-    public static void openREADME(){
+    /*  public static void openREADME(){
         chooser.setCurrentDirectory(new File("."));
         currentDirectory = (chooser.getCurrentDirectory()).toString();
         System.out.println(currentDirectory);
@@ -628,6 +634,84 @@ public class DataCollection{
         } catch (IOException e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(null, "Something went wrong.\nEnsure that the README.txt file is located in the same directory as this program.", "ERROR_NoInput", JOptionPane.ERROR_MESSAGE);
+        }
+    } */
+
+    public static void openCharts() {
+
+        //Get report file directory
+        //Locate appdata.txt
+        chooser.setCurrentDirectory(new File("."));
+        currentDirectory = (chooser.getCurrentDirectory()).toString();
+        System.out.println(currentDirectory);
+        while (!brSet) {
+            try {
+                br = new BufferedReader(new FileReader(currentDirectory + "\\appdata.txt"));
+                if (br.markSupported()) {
+                    if (markSet == false) {
+                        br.mark(200);
+                    }
+                }
+                brSet = true;
+            } catch (FileNotFoundException e) {
+                brSet = false;
+                e.printStackTrace();
+                //If there is no appdata.txt: make it!
+                System.out.println("Appdata file not found.");
+                try {
+                    fw = new FileWriter(currentDirectory + "\\appdata.txt");
+                    bw = new BufferedWriter(fw);
+                    bw.write("NoDefault");
+                    bw.newLine();
+                    bw.write("NoDefault");
+                    System.out.println("Appdata file created, no default report directory set");
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                } finally {
+                    try {
+                        if (bw != null) {
+                            bw.close();
+                        }
+                        if (fw != null) {
+                            fw.close();
+                        }
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        //Find default save location
+        try {
+            assert br != null; //Because of while loop above (while !brset)
+            br.reset();
+            defaultDirectory = br.readLine();
+            defaultFilename = br.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        //If no defaults, tell user
+        if (defaultDirectory.equals("NoDefault") || defaultFilename.equals("NoDefault")) {
+            JOptionPane.showMessageDialog(null, "Unable to locate a default save location.\nPlease set a default save location and try again.", "ERROR_NoFile", JOptionPane.ERROR_MESSAGE);
+            new DataCollection();
+        } else { //Else set filename and open file
+            filename = defaultDirectory + "\\" + defaultFilename;
+            //Add ".txt"
+            filenameForm = filename.substring(filename.length() - 4);
+            if (!filenameForm.equals(".txt")) {
+                filename += ".txt";
+            }
+            try {
+                p = rt.exec("notepad " + filename);
+            } catch (IOException e) {
+                e.printStackTrace();
+                JOptionPane.showMessageDialog(null, "Something went wrong.\nEnsure that the default save file is assigned properly and try again.", "ERROR_NoFile", JOptionPane.ERROR_MESSAGE);
+                new DataCollection();
+            }
+            JOptionPane.showMessageDialog(null, new JLabel("File at default save location successfully opened", JLabel.CENTER), "View Charts", JOptionPane.PLAIN_MESSAGE);
+            new DataCollection();
         }
     }
 
@@ -709,7 +793,7 @@ public class DataCollection{
         } else if (sTypeNum == 3) {
             sType = "Complex";
         } else if (sTypeNum == 4) {
-            sType = "Compound-complex";
+            sType = "Compnd-complx";
         } else {
             sType = "";
         }
@@ -939,12 +1023,14 @@ public class DataCollection{
                 } else {
                     mainVerbAmtStr = JOptionPane.showInputDialog(null, new JLabel("How many MAIN VERBS are there?", JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
                     if (mainVerbAmtStr.equals(null)) {
+                        //For cancelling
                         throw new NullPointerException();
                     } else {
                         mainVerbAmt = Integer.parseInt(mainVerbAmtStr);
                         while (mainVerbAmt < 0 || mainVerbAmt > 9){
                             mainVerbAmtStr = JOptionPane.showInputDialog(null, new JLabel("<html>Invalid input.<br>There cannot be less than 0 or more than 9 main verbs.<br><br>How many MAIN VERBS are there?</html>", JLabel.CENTER), "ERROR_Input", JOptionPane.PLAIN_MESSAGE);
                             if (mainVerbAmtStr.equals(null)) {
+                                //For cancelling
                                 throw new NullPointerException();
                             } else {
                                 mainVerbAmt = Integer.parseInt(mainVerbAmtStr);
@@ -952,9 +1038,10 @@ public class DataCollection{
                         }
                         if (mainVerbAmt == 1){
                             mainVerb[0] = JOptionPane.showInputDialog(null, new JLabel("What is the MAIN VERB?", JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
-                        }
-                        for (int mainInCount = 0; mainInCount < mainVerbAmt; mainInCount++) {
-                            mainVerb[mainInCount] = JOptionPane.showInputDialog(null, new JLabel("What is MAIN VERB " + (mainInCount + 1) + "?", JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
+                        } else {
+                            for (int mainInCount = 0; mainInCount < mainVerbAmt; mainInCount++) {
+                                mainVerb[mainInCount] = JOptionPane.showInputDialog(null, new JLabel("What is MAIN VERB " + (mainInCount + 1) + "?", JLabel.CENTER), "Main Verb", JOptionPane.PLAIN_MESSAGE);
+                            }
                         }
                     }
                 }
@@ -1158,14 +1245,14 @@ public class DataCollection{
                 if (typeNum == 1) {
                     ansGiven = JOptionPane.showInputDialog(null, new JLabel("What was the GIVEN ANSWER?", JLabel.CENTER), "Given Answer", JOptionPane.PLAIN_MESSAGE);
                 } else if (typeNum == 2) {
-                    yesNoGivenStr = JOptionPane.showInputDialog(null, "What was the GIVEN ANSWER?\n     1) Yes\n     2) No", "Given Answer", JOptionPane.PLAIN_MESSAGE);
+                    yesNoGivenStr = JOptionPane.showInputDialog(null, "What was the GIVEN ANSWER?\n     1) Yes\n     2) No\n     3) Other", "Given Answer", JOptionPane.PLAIN_MESSAGE);
                     if (yesNoGivenStr.equals(null)) {
                         throw new NullPointerException();
                     } else {
                         yesNoGiven = Integer.parseInt(yesNoGivenStr);
                     }
-                    while (yesNoGiven < 1 || yesNoGiven > 2) {
-                        yesNoGivenStr = JOptionPane.showInputDialog(null, "Invalid input.\n\nWhat was the GIVEN ANSWER?\n     1) Yes\n     2) No", "ERROR_Input", JOptionPane.PLAIN_MESSAGE);
+                    while (yesNoGiven < 1 || yesNoGiven > 3) {
+                        yesNoGivenStr = JOptionPane.showInputDialog(null, "Invalid input.\n\nWhat was the GIVEN ANSWER?\n     1) Yes\n     2) No\n     3) Other", "ERROR_Input", JOptionPane.PLAIN_MESSAGE);
                         if (yesNoGivenStr.equals(null)) {
                             throw new NullPointerException();
                         } else {
@@ -1176,19 +1263,27 @@ public class DataCollection{
                         ansGiven = "Yes";
                     } else if (yesNoGiven == 2) {
                         ansGiven = "No";
+                    } else if (yesNoGiven == 3) {
+                        ansGiven = JOptionPane.showInputDialog(null, new JLabel("What was the GIVEN ANSWER?", JLabel.CENTER), "Given Answer", JOptionPane.PLAIN_MESSAGE);
                     }
                 } else if (typeNum == 3) {
+                    //Choices
                     choiceGivenQuestion = "What was the GIVEN ANSWER?";
-                    for (int choiceGivenNumCount = 0; choiceGivenNumCount < choiceAmt; choiceGivenNumCount++) {
+                    //Temporarily set to "other" for sake of menu
+                    choice[choiceAmt] = "Other";
+                    for (int choiceGivenNumCount = 0; choiceGivenNumCount < choiceAmt + 1; choiceGivenNumCount++) {
                         choiceGivenQuestion = choiceGivenQuestion + "\n     " + (choiceGivenNumCount + 1) + ") " + choice[choiceGivenNumCount];
                     }
+                    //Reset to null
+                    choice[choiceAmt] = null;
                     choiceGivenStr = JOptionPane.showInputDialog(null, choiceGivenQuestion, "Given Answer", JOptionPane.PLAIN_MESSAGE);
                     if (choiceGivenStr.equals(null)) {
+                        //For cancelling
                         throw new NullPointerException();
                     } else {
                         choiceGiven = Integer.parseInt(choiceGivenStr);
                     }
-                    while (choiceGiven < 1 || choiceGiven > choiceAmt) {
+                    while (choiceGiven < 1 || choiceGiven > choiceAmt + 1) {
                         choiceGivenStr = JOptionPane.showInputDialog(null, "Invalid input\n\n" + choiceGivenQuestion, "ERROR_Input", JOptionPane.PLAIN_MESSAGE);
                         if (choiceGivenStr.equals(null)) {
                             throw new NullPointerException();
@@ -1196,9 +1291,14 @@ public class DataCollection{
                             choiceGiven = Integer.parseInt(choiceGivenStr);
                         }
                     }
-                    for (int choiceGivenOutCount = 0; choiceGivenOutCount < choiceAmt; choiceGivenOutCount++) {
-
-                        if (choiceGiven == (choiceGivenOutCount + 1)) {
+                    GivenLoop:
+                    for (int choiceGivenOutCount = 0; choiceGivenOutCount < choiceAmt + 1; choiceGivenOutCount++) {
+                        if (choiceGiven == (choiceAmt + 1)){
+                            //For "other"
+                            ansGiven = JOptionPane.showInputDialog(null, new JLabel("What was the GIVEN ANSWER?", JLabel.CENTER), "Given Answer", JOptionPane.PLAIN_MESSAGE);
+                            break GivenLoop;
+                        }
+                        else if (choiceGiven == (choiceGivenOutCount + 1)){
                             ansGiven = choice[choiceGivenOutCount];
                         }
                     }
