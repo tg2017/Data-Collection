@@ -1,0 +1,1 @@
+jar file also located outside "out" folder

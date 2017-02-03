@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Data Collection:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="544f94a4-7e5a-42f2-ae3d-b67e651c79d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/DataCollection.java" afterPath="$PROJECT_DIR$/src/com/company/DataCollection.java" />
-    </list>
+    <list default="true" id="544f94a4-7e5a-42f2-ae3d-b67e651c79d2" name="Default" comment="" />
     <ignored path="Data Collection.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,20 +29,19 @@
       <file leaf-file-name="DataCollection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="212">
+              <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-                <element signature="class#3108:3833" expanded="false" />
-                <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+                <element signature="e#5257#5258#0" expanded="true" />
+                <element signature="e#5293#5294#0" expanded="true" />
                 <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-                <element signature="e#5350#5377#0" expanded="false" />
-                <element signature="e#15002#15021#0" expanded="false" />
+                <element signature="e#5343#5370#0" expanded="false" />
+                <element signature="e#14995#15014#0" expanded="false" />
                 <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-                <element signature="e#20408#20435#0" expanded="false" />
+                <element signature="e#20401#20428#0" expanded="false" />
                 <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-                <element signature="e#29246#29273#0" expanded="false" />
+                <element signature="e#29239#29266#0" expanded="false" />
                 <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -52,6 +54,16 @@
                 <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
                 <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WindowConstants.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/javax/swing/WindowConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,17 +125,17 @@
         <option value="$PROJECT_DIR$/src/com/company/Tester.java" />
         <option value="$PROJECT_DIR$/src/com/company/Menu.java" />
         <option value="$PROJECT_DIR$/README.txt" />
-        <option value="$PROJECT_DIR$/../../TestDoc.txt" />
+        <option value="$USER_HOME$/TestDoc.txt" />
         <option value="$PROJECT_DIR$/appdata.txt" />
         <option value="$PROJECT_DIR$/src/com/company/DataCollection.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-90" />
-    <option name="y" value="96" />
-    <option name="width" value="1612" />
-    <option name="height" value="866" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -298,41 +310,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collection" />
+              <option name="myItemId" value="DataCollection" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data Collection" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
+              <option name="myItemId" value="DataCollection" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -621,26 +615,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-90" y="96" width="1612" height="866" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26891893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23747016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.020547945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.018918918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13909775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03108108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -652,6 +645,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03108108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -676,60 +670,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
-            <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
-            <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
-            <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
-            <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterChoices#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterQuestionWord#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterSubject#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterMainVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterAuxVerb#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterNegativity#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterIntendedAnswer#0;class#DataCollection#0" expanded="false" />
-            <element signature="method#enterGivenAnswer#0;class#DataCollection#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.bat" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5355">
           <caret line="315" column="35" lean-forward="false" selection-start-line="315" selection-start-column="35" selection-end-line="315" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -745,29 +701,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.bat" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -789,16 +738,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -820,16 +768,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -851,16 +798,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -882,16 +828,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -913,16 +858,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -944,16 +888,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -975,16 +918,15 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1000,29 +942,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1038,29 +973,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1076,29 +1004,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1114,29 +1035,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1152,29 +1066,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1190,29 +1097,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1228,29 +1128,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1266,29 +1159,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1304,27 +1190,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.class" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/GetInfo.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/Writer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -1345,16 +1213,15 @@
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1372,20 +1239,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../DataCollectionJCreator.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/appdata.txt" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.bat" />
+    <entry file="file://$PROJECT_DIR$/out/production/Data Collection/com/company/DataCollection.bat" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Tester.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1401,20 +1256,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/javax/swing/JOptionPane.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
-          <folding>
-            <element signature="e#13311#13313#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1429,34 +1275,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="912" column="10" lean-forward="true" selection-start-line="912" selection-start-column="10" selection-end-line="912" selection-end-column="10" />
-          <folding>
-            <element signature="e#31436#31437#0" expanded="false" />
-            <element signature="e#31480#31481#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="34" column="9" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="34" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../TestDoc.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Menu.java" />
+    <entry file="file://$USER_HOME$/TestDoc.txt" />
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-467">
           <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1464,7 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1472,26 +1298,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="511" column="0" lean-forward="false" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/javax/swing/WindowConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="212">
+          <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#menu#0;class#DataCollection#0" expanded="false" />
-            <element signature="class#3108:3833" expanded="false" />
-            <element signature="method#actionPerformed#0;class#3108:3833" expanded="false" />
+            <element signature="e#5257#5258#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
             <element signature="method#mainProgram#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#5350#5377#0" expanded="false" />
-            <element signature="e#15002#15021#0" expanded="false" />
+            <element signature="e#5343#5370#0" expanded="false" />
+            <element signature="e#14995#15014#0" expanded="false" />
             <element signature="method#resetDefaults#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#20408#20435#0" expanded="false" />
+            <element signature="e#20401#20428#0" expanded="false" />
             <element signature="method#openCharts#0;class#DataCollection#0" expanded="false" />
-            <element signature="e#29246#29273#0" expanded="false" />
+            <element signature="e#29239#29266#0" expanded="false" />
             <element signature="method#enterQuestion#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterSentenceType#0;class#DataCollection#0" expanded="false" />
             <element signature="method#enterQuestionType#0;class#DataCollection#0" expanded="false" />
@@ -1513,10 +1345,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Data Collection:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

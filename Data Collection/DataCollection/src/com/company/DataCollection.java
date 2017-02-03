@@ -66,7 +66,7 @@ public class DataCollection {
         menu.setVisible(true);
         menu.setSize(400, 200);
         menu.setResizable(false);
-        menu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        menu.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         menu.setLayout(new GridLayout(2, 1));
         menu.setLocationRelativeTo(null);
 
@@ -96,12 +96,9 @@ public class DataCollection {
         };
 
 
-        //initialize();
-
-
-        labelText = new JLabel("Pie", JLabel.CENTER);
+        labelText = new JLabel("Data Collector", JLabel.CENTER);
         smallLabelText = new JLabel("Make a selection below", JLabel.CENTER);
-        labelText.setFont(new Font("", Font.PLAIN, 30));
+        labelText.setFont(new Font("", Font.BOLD, 30));
         smallLabelText.setFont(new Font("", Font.PLAIN, 15));
         textPanel.add(labelText);
         textPanel.add(smallLabelText);
